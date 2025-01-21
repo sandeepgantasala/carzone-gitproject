@@ -4,7 +4,7 @@ from django.utils.html import format_html
 # Register your models here.
 
 class TeamAdmin(admin.ModelAdmin):
-   
+
    
    #for thumbnail
     def thumbnails(self,object):

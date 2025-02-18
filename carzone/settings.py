@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "accounts.apps.AccountsConfig",
     "cars.apps.CarsConfig",
     "pages.apps.PagesConfig",
     'django.contrib.admin',
@@ -135,3 +136,12 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR, "carzone/static"),]
 
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+#Messages Settings
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+    
+}

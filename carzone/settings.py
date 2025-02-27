@@ -81,11 +81,12 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carzonedata',
+        'NAME': 'carzone_db',
         'USER': 'postgres',
         'PASSWORD': 'root',
-        'HOST': 'localhost',  # or the IP address of your database server
-        'PORT': '5432', 
+        'HOST': '127.0.0.1',
+        'PORT': '5432'  # or the IP address of your database server
+        
     }
 }
 
